@@ -31,6 +31,7 @@
 
 .links {
   display: flex;
+  align-items: center;
   gap: 16px;
 }
 
@@ -38,4 +39,14 @@
   border-top: 1px solid #666666;
   padding-top: 20px;
   line-height: 20px;
+}
+
+.footer-logo {
+  display: none;
+}
+
+@media @gt-tablet{
+  .footer-logo {
+    display: unset;
+  }
 }
