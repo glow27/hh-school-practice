@@ -73,7 +73,6 @@ a {
 
 abbr[title] {
   border-bottom: none;
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
 }
 
@@ -149,19 +148,19 @@ button::-moz-focus-inner {
 }
 
 button:-moz-focusring {
-  outline: 1px dotted ButtonText;
+  outline: 1px dotted buttontext;
 }
 
 [type="button"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+  outline: 1px dotted buttontext;
 }
 
 [type="reset"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+  outline: 1px dotted buttontext;
 }
 
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+  outline: 1px dotted buttontext;
 }
 
 fieldset {
@@ -471,7 +470,6 @@ h4 {
 .service {
   align-items: center;
   gap: 20px;
-  max-width: 260px;
   padding-bottom: 24px;
   display: flex;
 }
@@ -521,6 +519,7 @@ h4 {
 }
 
 .links {
+  align-items: center;
   gap: 16px;
   display: flex;
 }
@@ -531,4 +530,13 @@ h4 {
   line-height: 20px;
 }
 
+.footer-logo {
+  display: none;
+}
+
+@media (width >= 930px) {
+  .footer-logo {
+    display: unset;
+  }
+}
 /*# sourceMappingURL=index.d2908973.css.map */
